@@ -1,0 +1,22 @@
+Using React on the client side and using NestJS (and https://www.prisma.io/nestjs ) on the server
+side, create a very basic CRUD application.
+Database type should be Postgres.
+We are interested in the tables:
+   Table Books, interested in columns: Title, PublishedOn
+   Table Authors, interested in columns: FirstName, LastName
+
+    * Tables should be defined with database migrations, and initially they should be seeded with a few
+records into them.
+    * In the home page list the books (from the Postgres DB), and show the following fields: book's title,
+book's published on date and its author's full name.
+    * Clicking overbook name, should open the "book details" page from where user can edit the details
+for the book.
+    * Clicking over author's full name, should open the "author details" page from where user can edit the
+details for the author.
+
+
+The solution should be docker-sized, in a way that, we should build separate docker images for:
+-the client side
+-the server side
+-the Postgres DB
+And the docker containers should be build and run using shared docker-compose file

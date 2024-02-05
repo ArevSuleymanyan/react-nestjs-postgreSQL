@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.home-container{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.book-table{
+  width: -webkit-fill-available;
+}
+td, th{
+  text-align: start;
+}
+.btn{
+  background-color: #ff1f1f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+th{
+  padding: 5px 0 10px;
+}
+.title{
+  text-decoration: underline;
+}
+.edit-field {
+  cursor: pointer;
+}
+.edit-field:hover{
+  text-decoration: underline;
+}
+.details-page{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.details-box{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.details-box>input{
+ height: 25px;
+  margin-bottom: 1rem;
+}
+.btn-box{
+  display: flex;
+  justify-content: space-between;
+}
+.back, .save{
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.back{
+  background-color: dodgerblue;
+  color: white;
+}
+.save.active{
+  background-color: green;
+  color: white;
+}
